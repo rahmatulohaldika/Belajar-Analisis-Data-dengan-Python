@@ -37,4 +37,6 @@ elif choice == 'Review Scores':
     st.subheader('Review Scores')
     # Plot distribution of review scores
     score_counts = all_df['review_score'].value_counts().sort_index()
-    st.bar_chart(score_counts)    
+    st.bar_chart(score_counts)
+
+st.pyplot(plt)
